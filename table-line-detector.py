@@ -57,15 +57,15 @@ def vline_detector(image):
 
     # find center of spikes in pixel count
     non_zero = [index for index in range(len(v_pix_counts)) if v_pix_counts[index] > 0]
-    col_sep = list(map(lambda x: statistics.mean(x), group_list(non_zero)))
+    coords = list(map(lambda x: statistics.mean(x), group_list(non_zero)))
 
-    return (col_sep, plot)
+    return (coords, plot)
 
 
 def hline_detector(image):
 
     image = cv2.rotate(image, cv2.ROTATE_90_COUNTERCLOCKWISE)
-    col_sep, plot = vline_detector(image)
+    coords, plot = vline_detector(image)
     plt.xlabel("height of image (pixels)")
 
-    return([col_sep, plot])
+    return([coords, plot])
