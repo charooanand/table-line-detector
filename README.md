@@ -4,6 +4,14 @@
 
 ## usage
 
+`import cv2`
+
+`import matplotlib.pyplot as plt`
+
+`import numpy as np`
+
+`import statistics`
+
 `image = cv2.imread(image_path)`
 
 `coords, plot  = vline_detector(image)`
