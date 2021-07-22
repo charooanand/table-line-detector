@@ -1,6 +1,6 @@
 # table-line-detector
 
-`vline_detector()` is a function for finding the pixel location of vertical lines in images of tables. `hline_detector()` is an analogous function for horizontal. These could be useful for cropping cells of tables before running OCR.
+`vline_detector()` is a function for finding the pixel location of vertical lines in images of tables. `hline_detector()` is an analogous function for horizontal lines. These could be useful for cropping cells of tables before running OCR.
 
 ## usage
 
