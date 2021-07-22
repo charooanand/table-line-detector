@@ -1,8 +1,3 @@
-import cv2
-import matplotlib.pyplot as plt
-import numpy as np
-import statistics
-
 def v_count_pix(image): # input image is b&w and inverted
 
   v_pix_counts = []
